@@ -132,3 +132,7 @@ credentials*.json
 token*.json
 client_secret*.json
 service-account*.json
+
+# Laufzeit-Einstellungen der Oberfläche
+config/preferences.json
+config/restart-policy.json
