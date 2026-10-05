@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "instance_name": "Eddy",
+  "profile": "core",
+  "default_engine": "hermes",
+  "generated_at": "2026-10-05T14:32:04.355898+00:00",
+  "engine": {
+    "default_profile": "hermes",
+    "selected": {
+      "id": "hermes",
+      "label": "Hermes Agent",
+      "kind": "cli",
+      "provider": "nousresearch",
+      "setup_group": "hermes-cli",
+      "auth_modes": [
+        "provider_config"
+      ],
+      "auth_check": {
+        "mode": "all",
+        "items": [
+          {
+            "type": "command",
+            "command": "hermes",
+            "label": "Hermes Agent CLI",
+            "hint": "Install Hermes and configure at least one model provider."
+          }
+        ]
+      },
+      "commands": [
+        {
+          "command": "hermes",
+          "required": true,
+          "hint": "Install Hermes Agent or choose another engine profile."
+        }
+      ],
+      "env": []
+    },
+    "available_profiles": [
+      "codex",
+      "claude",
+      "hermes",
+      "gemini",
+      "openai-api",
+      "anthropic-api",
+      "gemini-api",
+      "xai-api",
+      "lmstudio",
+      "ollama",
+      "manual"
+    ]
+  },
+  "safe_defaults": {
+    "generate_agent_token": true,
+    "overwrite_env": false,
+    "external_sends_enabled": false,
+    "demo_data": false,
+    "instance_content_policy": "do_not_ship"
+  },
+  "profile_flags": {
+    "demo_data": false,
+    "demo_seed": "",
+    "external_sends_enabled": false
+  },
+  "core": {
+    "chat": true,
+    "multi_pane": true,
+    "workspace": true,
+    "voice_to_text": true,
+    "mobile": true,
+    "artifacts": true,
+    "heartbeat": true
+  }
+}
